@@ -1,0 +1,176 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: url('https://plus.unsplash.com/premium_photo-1719418813067-932d9fd09fa1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cGxhbmV0fGVufDB8fDB8fHww') center/cover no-repeat;
+    background-size: 400% 400%;
+    animation: rotate-background 30s linear infinite;  /* Animation for rotating the background */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+  
+
+  @keyframes rotate-background {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .min-h-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Styling for the Logout button */
+  .bg-red-500 {
+    background-color: #f44336;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bg-red-500:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Search bar styling */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #6a11cb;
+  }
+  
+  /* User card layout in a row */
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; /* Align items from left to right */
+  }
+  
+  /* User card styling */
+  .bg-white {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+  }
+  
+  .bg-white:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Avatar circular border */
+  .rounded-full {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Name and email styling */
+  h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  p {
+    font-size: 1rem;
+    color: #777;
+    margin-top: 5px;
+  }
+  
+  /* Action buttons (Edit, Delete) */
+  .flex .space-x-2 {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .bg-blue-500, .bg-red-500 {
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .bg-blue-500 {
+    background-color: #4caf50;
+  }
+  
+  .bg-blue-500:hover {
+    background-color: #388e3c;
+  }
+  
+  .bg-red-500 {
+    background-color: #f44336;
+  }
+  
+  .bg-red-500:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Pagination buttons */
+  .bg-gray-300 {
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bg-gray-300:hover {
+    background-color: #bdbdbd;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+    background-color: #bdbdbd;
+  }
+  

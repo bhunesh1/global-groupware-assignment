@@ -1,0 +1,228 @@
+
+body {
+    margin:300px;
+    padding: 0;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    background: linear-gradient(to right, #6a11cb, #2575fc); 
+    font-family: 'Arial', sans-serif; 
+  }
+  
+
+  .login-container {
+    background-color: #ffffff; 
+    padding: 2rem; 
+    border-radius: 12px; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    max-width: 400px; 
+    width: 100%; 
+    text-align: center;
+    border: 1px solid #e0e0e0;
+    margin: 200px
+  }
+  
+
+  .login-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #333333; 
+  }
+  
+
+  .login-container input {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+
+  .login-container input:focus {
+    outline: none;
+    border-color: #6a11cb;
+    box-shadow: 0 0 6px rgba(106, 17, 203, 0.5);
+  }
+  
+  
+  .login-container button {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: #6a11cb;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+
+  .login-container button:hover {
+    background-color: #2575fc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .error-message {
+    background-color: #ffe5e5;
+    color: #d9534f;
+    padding: 0.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    background-color: #f4f4f4;
+    margin: 0;
+  }
+  
+
+  .sidebar {
+    width: 250px;  
+    position: fixed;  
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;  
+  }
+  
+
+  .content {
+    margin-left: 250px; 
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start; 
+    margin-bottom: 80px; 
+  }
+  
+
+  .bg-white {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .bg-white:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .rounded-full {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .bg-gray-300 {
+    background-color: #e0e0e0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .bg-gray-300:hover {
+    background-color: #bdbdbd;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+    background-color: #bdbdbd;
+  }
+  
+
+  button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+
+  .pagination-wrapper {
+    position: fixed;
+    bottom: 20px;  
+    width: 100%;
+    text-align: center;
+    z-index: 10;  
+  }
+  
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  button.bg-red-500 {
+    background-color: #f44336;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.bg-red-500:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Adjust the layout and display of the user list */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #6a11cb;
+  }
+  
+  
