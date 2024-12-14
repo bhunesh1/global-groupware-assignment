@@ -32,7 +32,7 @@ State Management: React's useState and useEffect
 Installation and Setup
 1. Clone the Repository
 Clone the repository using the command:
-git clone https://github.com/your-username/employee-wise.git
+git clone https://github.com/bhunesh1/employee-wise.git
 2. Navigate to the Project Directory
 cd employee-wise
 3. Install Dependencies
